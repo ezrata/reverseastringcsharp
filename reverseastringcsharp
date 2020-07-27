@@ -1,0 +1,32 @@
+using System;
+
+namespace ReverseString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a word or a sentence: ");
+
+            string input1 = Console.ReadLine();
+
+            Console.WriteLine("You entered: " + input1);
+
+
+            char[] stringArray = input1.ToCharArray();
+
+            string reverse = String.Empty;
+
+            for (int i = stringArray.Length - 1; i >= 0; i--)
+            {
+                reverse += stringArray[i];
+            }
+
+            Console.WriteLine("The reverse version of " +input1 + " is " + reverse);
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
